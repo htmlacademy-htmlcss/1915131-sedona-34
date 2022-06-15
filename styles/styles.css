@@ -65,6 +65,7 @@ body {
   display: flex;
   margin: 0 auto;
   list-style: none;
+  padding: 0;
 }
 
 .town-qualities-item {
@@ -80,6 +81,7 @@ body {
   display: flex;
   margin: 0 auto;
   list-style-type: none;
+  padding: 0;
 }
 
 .advantages-item {
@@ -95,8 +97,10 @@ body {
 .index-newsletter {
   color: white;
   background-image: url("../images/background-letter.jpg");
-  background-size: 1200px 411px auto;
+  background-size: 1200px 417px auto;
   background-repeat: no-repeat;
+  height: 417px;
+  text-align: center;
 }
 
 .contacts {
@@ -162,4 +166,39 @@ body {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
+}
+
+.reasons-container {
+  height: 282px;
+}
+
+.booking {
+  height: 417px;
+}
+
+.contacts {
+  display: flex;
+  height: 120px;
+}
+
+.social-list {
+  padding: 0;
+  margin-left: 70px;
+}
+
+.phone {
+  margin-left: 237px;
+  margin-right: 236px;
+  text-decoration: none;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.html-academy-link {
+  margin-right: 70px;
+  padding: 0;
 }
