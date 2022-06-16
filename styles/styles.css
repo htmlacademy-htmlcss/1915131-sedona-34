@@ -198,7 +198,31 @@ body {
   text-align: center;
 }
 
-.html-academy-link {
-  margin-right: 70px;
+.qualities-title {
+  text-transform: uppercase;
+}
+
+.reasons-title {
+  text-transform: uppercase;
+}
+
+.hotels-form {
+}
+
+.filter-wrapper {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
   padding: 0;
+}
+
+.searching-results {
+  display: flex;
+  width: 1200px;
+}
+
+.newsletter {
+  color: black;
+  height: 417px;
+  text-align: center;
 }
