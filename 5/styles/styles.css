@@ -138,6 +138,9 @@ body {
 
 .pagination {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .social-list {
@@ -216,13 +219,19 @@ body {
   padding: 0;
 }
 
-.searching-results {
-  display: flex;
-  width: 1200px;
-}
-
 .newsletter {
   color: black;
   height: 417px;
   text-align: center;
+}
+
+.housing-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 38px;
+}
+
+.results-title-box {
+  display: flex;
 }
