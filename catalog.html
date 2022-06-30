@@ -30,7 +30,7 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation-list user-navigation">
+        <ul class="user-navigation">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -42,13 +42,14 @@
             </a>
           </li>
           <li>
-            <button class="button button-booking" type="button">Хочу сюда!</button>
+            <button class="button want-button" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-inner">
       <section class="hotels-form">
+        <div class="filter-wrapper">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -58,10 +59,9 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-        <div class="filter-wrapper">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура</legend>
+            <fieldset class="catalog-filter-checkbox">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -83,8 +83,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья</legend>
+            <fieldset class="catalog-filter-radio">
+              <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -106,8 +106,21 @@
                 </li>
               </ul>
             </fieldset>
-            <input class="second-button" type="submit" value="Применить">
-            <input class="light-button" type="reset" value="Сбросить">
+            <fieldset class="price-range">
+              <legend class="price-range-title">Стоимость, Р</legend>
+              <label class="price-label" for="low-price">
+              <input class="price low-price" type="text" id="low-price" placeholder="0">
+              <span class="low">От</span>
+              </label>
+              <label class="price-label" for="high-price">
+              <input class="price high-price" type="text" id="high-price" placeholder="9000">
+              <span class="high">До</span>
+              </label>
+            </fieldset>
+            <div class="button-wrapper">
+            <button class="second-button range-button">Применить</button>
+            <button class="light-button" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
       </section>
@@ -202,11 +215,11 @@
     </main>
     <footer class="page-footer">
       <section class="newsletter">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-subscription">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="email" placeholder="Ваш e-mail">
-          <button class="button second-button" type="submit">Подписаться</button>
+          <input class="email" type="email" name="email" placeholder="Ваш e-mail">
+          <button class="button second-button submit-button" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="contacts">
