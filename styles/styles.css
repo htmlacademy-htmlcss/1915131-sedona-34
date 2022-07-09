@@ -14,6 +14,7 @@
   font-display: swap;
 }
 
+
 html {
   height: 100%;
 }
@@ -213,6 +214,9 @@ a {
   line-height: 20px;
   text-align: center;
   color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
 }
 
 .second-button {
@@ -236,6 +240,7 @@ a {
   padding: 12px 24px;
   display: block;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .pagination-current {
@@ -399,9 +404,9 @@ a {
 }
 
 .housing-results {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   padding-left: 70px;
   padding-right: 70px;
   margin-bottom: 96px;
@@ -563,4 +568,21 @@ a {
 
 .housing-card {
   padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
+}
+
+.housing-title {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.raiting {
+  margin: 0;
+}
+
+.details {
+  padding: 9px 15px;
 }
