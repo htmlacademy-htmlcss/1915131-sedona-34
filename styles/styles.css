@@ -100,7 +100,6 @@ a {
 
   .sedona-img {
     display: block;
-    background: url("../images/divider.svg") no-repeat;
   }
 
   .advantages-title {
@@ -672,7 +671,7 @@ a {
   }
 
   .list-icons {
-    background-image: url(../images/View-ist.svg);
+    background-image: url(../images/view-ist.svg);
   }
 
   .housing-card {
@@ -872,7 +871,7 @@ a {
   }
 
   .control-input[type="radio"]:checked+.control-mark {
-    background: url("../images/Ellipse\ 4.svg") no-repeat #ffffff 50% 50%;
+    background: url("../images/radio.svg") no-repeat #ffffff 50% 50%;
   }
 
   .control-input[type="radio"]:focus+.control-mark {
