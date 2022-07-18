@@ -239,7 +239,7 @@ body {
 .hotels-number {
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-bottom: 25px;
   border-top: solid 1px #e6e6e6;
   margin-left: 73px;
@@ -273,12 +273,12 @@ body {
 
 .pagination {
   list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 8px;
-    align-items: center;
-    margin-right: 268px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+  align-items: center;
+  margin-right: 268px;
 }
 
 .page-navigation {
@@ -323,6 +323,7 @@ body {
 
 .favs {
   padding: 20px 11px;
+  position: relative;
 }
 
 .container {
@@ -475,7 +476,7 @@ body {
   color: black;
   text-align: center;
   background-color: white;
-  padding: 96px 200px;
+  padding: 95px 200px;
 }
 
 .housing-results {
@@ -484,25 +485,27 @@ body {
   column-gap: 18px;
   padding-left: 73px;
   padding-right: 70px;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 
 .hotels-select-description {
   margin: 0;
-    font-size: 18px;
-    line-height: 21px;
-    margin-right: 53px;
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 53px;
 }
 
 .hotels-select {
   width: 160px;
-    padding: 14px 20px;
-    font-size: 18px;
-    line-height: 21px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    appearance: none;
-    font-family: 'PT Sans'
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  appearance: none;
+  font-family: 'PT Sans', sans-serif;
+  background: url("../images/arrow.svg") no-repeat right 17px center;
+
 }
 
 .results-title-box {
@@ -664,7 +667,8 @@ body {
   padding-top: 20px;
 }
 
-.light-button:hover, .light-button:active {
+.light-button:hover,
+.light-button:active {
   color: #ffffff;
   opacity: 60%;
 }
@@ -760,7 +764,7 @@ body {
 }
 
 .housing-card {
-  padding: 20px;
+  padding: 19px;
   display: grid;
   grid-template-columns: 140px 140px;
   column-gap: 19px;
@@ -880,11 +884,42 @@ body {
 .breadcrumbs-catalog {
   font-size: 16px;
   line-height: 21px;
+  margin-left: 25px;
+  position: relative;
 }
 
-.breadcrumbs-catalog+.breadcrumbs-catalog::before {
+.breadcrumbs-catalog::before {
   background: url(../images/bread-arrow.svg) no-repeat;
   content: "";
+  position: absolute;
+  top: 7px;
+  right: 83px;
+  width: 5px;
+  height: 8px;
+}
+
+
+.favs::after {
+  content: "12";
+  position: absolute;
+  top: 10px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 50%;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: -0.1em;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .range-wrapper {
@@ -1026,6 +1061,7 @@ body {
   position: relative;
   margin: auto;
   padding: 70px;
+  padding-top: 62px;
   background-color: #ffffff;
   border-radius: 30px;
 }
@@ -1051,7 +1087,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 63px;
+  margin-bottom: 64px;
 }
 
 .search-form {
@@ -1100,10 +1136,14 @@ body {
 .modal-button {
   grid-column: 1 / -1;
   padding: 12px 26px;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .modal-container-close {
-  display: none;
+  display: non;
 }
 
 .vk {
@@ -1120,4 +1160,70 @@ body {
 
 .html-academy-link {
   align-self: center;
+}
+
+.date-field::placeholder {
+  color: black;
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: #83B3D3;
+  padding: 0;
+  margin: 0;
+  display: block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  position: absolute;
+  top: 100%;
+  margin-top: 24px;
+  right: 50%;
+  transform: translateX(52%);
+  box-sizing: border-box;
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+  display: block;
+}
+
+.tooltip-text::before {
+  content: ' ';
+  background-image: url("../images/triangle.svg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  width: 19px;
+  height: 9px;
+  margin-left: auto;
+  margin-right: auto;
 }
