@@ -949,6 +949,14 @@ body {
   cursor: pointer;
 }
 
+.range-toggle:focus {
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.range-toggle:active {
+  box-shadow: 0 0 0 2px #83B3D3; 
+}
+
 .toggle-min {
   top: -8px;
   left: 0px;
@@ -1076,10 +1084,21 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  fill: #d9d9d9;
 }
 
 .modal-title {
@@ -1125,12 +1144,33 @@ body {
 
 .guests-field {
   width: 133px;
+  padding: 14px 60px;
+}
+
+.guests-button-adults {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+}
+
+.adults-more {
+  top: 22px;
+  right: 22px;
+}
+
+.adults-less {
+  top: 22px;
+  right: 50px;
 }
 
 .field-group {
   display: flex;
   justify-content: space-between;
   align-content: center;
+}
+
+.field-group-adults {
+  position: relative;
 }
 
 .modal-button {
@@ -1140,6 +1180,20 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+}
+
+.modal-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-button:focus {
+  background-color: #68A2CA;
+  box-shadow: 0 0 0 3px #756257;
+}
+
+.modal-button:active {
+  background-color: #68A2CA;
+  color: #d9d9d9;
 }
 
 .modal-container-close {
@@ -1226,4 +1280,9 @@ body {
   height: 9px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.guests-field::-webkit-inner-spin-button,
+.guests-field::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
