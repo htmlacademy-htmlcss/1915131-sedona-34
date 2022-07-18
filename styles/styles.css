@@ -425,6 +425,10 @@ body {
   width: 175px;
 }
 
+.qualities-subscription-food {
+  width: 250px;
+}
+
 .town-qualities-item:nth-child(1) {
   background: url("../images/house.svg") no-repeat 50% 80px rgba(131, 179, 211, 0.12);
   align-items: center;
@@ -432,6 +436,7 @@ body {
 
 .town-qualities-item:nth-child(2) {
   background: url("../images/food.svg") no-repeat 50% 80px;
+  align-items: center;
 }
 
 .town-qualities-item:nth-child(3) {
@@ -670,7 +675,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -922,7 +927,7 @@ body {
   height: 20px;
   background-color: #7DB54F;
   border-radius: 50%;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -1141,7 +1146,7 @@ body {
 }
 
 .modal-label {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1234,7 +1239,7 @@ body {
 .modal-button {
   grid-column: 1 / -1;
   padding: 12px 26px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -1255,7 +1260,7 @@ body {
 }
 
 .modal-container-close {
-  display: non;
+  display: none;
 }
 
 .vk {
