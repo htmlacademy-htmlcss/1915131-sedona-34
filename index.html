@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -182,16 +184,35 @@
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="field-group modal-date">
             <label class="modal-label" for="date-in">Дата Заезда:</label>
+            <div class="date-field-wrap">
             <input class="date-field field" type="text" id="date-in" name="date-in" placeholder="27 апреля 2020">
+            <button class="calendar" type="button">
+              <svg class="calendar-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" /><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+            </button>
+            <p class="message-error">Мы не можем отправить вас в прошлое.</p>
+            </div>
           </div>
           <div class="field-group modal-date">
             <label class="modal-label" for="date-out">Дата Выезда:</label>
+            <div class="date-field-wrap">
             <input class="date-field field" type="text" id="date-out" name="date-out" placeholder="1 сентября 2021">
+            <button class="calendar" type="button">
+              <svg class="calendar-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z" /><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+            </button>
+            <p class="message-success">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
           </div>
           <div class="field-group field-group-adults">
             <label class="modal-label" for="adults-number">Взрослые:</label>
-            <input class="guests-field field" type="number" id="adults-number" name="adults-number">
-            <button class="guests-button-adults adults-less" type="button"><svg width="13" height="1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg></button> <button class="guests-button-adults adults-more"></button>
+            <div class="field-group-wrap">
+            <input class="guests-field field" type="number" id="adults-number" name="adults-number" value="2">
+            <button class="guests-button less" type="button">
+              <svg class="less-icon hover-icon" width="13" height="1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+            </button>
+            <button class="guests-button more" type="button">
+              <svg class="more-icon hover-icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+            </button>
+            </div>
           </div>
           <div class="field-group">
             <span class="modal-label">
@@ -203,7 +224,15 @@
               <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
             </span>
             </span>
-            <input class="guests-field field" type="number" id="kids-number" name="kids-number">
+            <div class="field-group-wrap">
+            <input class="guests-field field" type="number" id="kids-number" name="kids-number" value="1">
+            <button class="guests-button less" type="button">
+              <svg class="less-icon hover-icon" width="13" height="1" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+            </button>
+            <button class="guests-button more" type="button">
+              <svg class="more-icon hover-icon" width="13" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+            </button>
+            </div>
           </div>
           <button class="button second-button modal-button" type="submit">Найти</button>
         </form>
